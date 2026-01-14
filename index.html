@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Button Example</title><style>
+  * {
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", "Poppins", sans-serif;
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffd6e8, #e0f7ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 24px;
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+    padding: 16px;
+    margin: 10px 0;
+    font-size: 18px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .yes-button {
+    background: #7ed957;
+    color: white;
+    box-shadow: 0 6px 0 #5cbf3a;
+  }
+
+  .no-button {
+    background: #ff6b6b;
+    color: white;
+    box-shadow: 0 6px 0 #e05252;
+  }
+
+  button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.2);
+  }
+
+  /* ANIMASI */
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    50% { transform: translateX(6px); }
+    75% { transform: translateX(-6px); }
+    100% { transform: translateX(0); }
+  }
+
+  .shake {
+    animation: shake 0.3s;
+  }
+
+  @keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+  }
+
+  .bounce {
+    animation: bounce 0.4s;
+  }
+</style>
+
+</head><body>
+
+<div class="card">
+  <h2>miaaa sayanggg didittt ndaaa? 🤭</h2>
+
+  <button class="yes-button" onclick="handleYesClick()">BANGETTTT 😖</button>
+  <button class="no-button" onclick="handleNoClick()">NAJIS 😜</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
